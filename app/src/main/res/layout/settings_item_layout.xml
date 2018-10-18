@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    >
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/custom_margin"
+        android:layout_marginRight="@dimen/custom_margin"
+        android:layout_marginTop="@dimen/custom_margin"
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardCornerRadius="10dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/parent_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="3"
+            >
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                >
+
+                <ImageView
+                    android:id="@+id/btn_is_present"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textOn="@string/yes"
+                    android:textOff="@string/no"
+                    android:background="@mipmap/entry_grey"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_settings"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="Checklist"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/custom_margin"/>
+
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_route_plan"
+            android:icon="@mipmap/entry_grey"
+            android:title="@string/menu_daily_route_plan" />
+        <item
+            android:id="@+id/nav_download"
+            android:icon="@mipmap/download_grey"
+            android:title="@string/menu_daily_download" />
+        <item
+            android:id="@+id/nav_upload"
+            android:icon="@mipmap/upload_grey"
+            android:title="@string/menu_upload_data" />
+        <item
+            android:id="@+id/nav_exit"
+            android:icon="@mipmap/exit_grey"
+            android:title="@string/menu_exit" />
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_services"
+                android:icon="@mipmap/services_grey"
+                android:title="@string/menu_services" />
+        </menu>
+    </item>
+
+</menu>
